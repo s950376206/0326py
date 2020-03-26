@@ -47,7 +47,6 @@ class Pikachu(Pokemon):
         super().__init__(new_name, new_weight, new_height, new_food, new_cp)
 
 
-
     def eat(self):
         print(f'The {self.get_name()} is eating{self.get_food()}.pika')
 
@@ -75,3 +74,6 @@ ls = [p, pp, j]
 
 for item in ls:
     item.make_noise()
+
+    # 今天是0326
+    # 今天教版本控制
