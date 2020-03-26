@@ -1,0 +1,37 @@
+import VM.vending_machine as v
+from VM.data import Drink
+flag = True
+balance = 0
+drinks = [
+    Drink('可樂', 20),
+    Drink('雪碧', 20),
+    Drink('茶裏王', 25),
+    Drink('原萃', 25),
+    Drink('純粹喝', 30),
+    Drink('水', 20)
+]
+
+
+
+
+while flag:
+    print('\n====================================')
+    select = eval(input('1. 儲值\n2. 購買\n3. 查詢餘額\n4. 離開\n請選擇： '))
+
+    if select == 1: #儲值
+        v.deposit()
+    elif select == 2: #購買
+        v.buy()
+    elif select == 3: #查詢餘額
+        print(f'目前餘額為{balance}元')
+    elif select == 4: #離開
+        print('bye')
+        flag = 0
+        break
+
+    else:  #重新輸入
+        print('====請輸入1-4之間====')
+        continue
+
+
+
